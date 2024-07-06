@@ -17,9 +17,75 @@
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
+        <h3>HTML Basics</h3>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>HTML stands for <b>Hypertext Markup Language (HTML)</b>, which is used to give the content structure.</li>
+          <li>HTML is one of the three cornerstone languages used in web development: HTML, CSS, and JS.</li>
+          <li>An <b>element</b> is a type of content on a webpage. The following element types are commonly used to add content to pages:
+            <br><b>Text elements</b>
+            <br><b>Image elements</b>
+            <br><b>Header elements</b>
+            <br><b>List elements</b>
+            </li>
+            <li>In addition to elements that can be seen on the page, elements are also used to divide the content on the page and to describe the content to browsers and other developers.</li>
+            <li>Here are some common element types that are used to divide and describe a page:
+              <br><b>Meta-related elements</b>
+              <br><b>Content division elements</b>
+              <br><b>Semantic elements</b>
+            </li>
+            <li>As developers, one of the first things we must think about when developing a webpage is building a sturdy "frame" using HTML</li>
+            <li>First, we use HTML to build a sturdy frame, using HTML elements as our frame’s building blocks. Next, we add CSS to define the style. Finally, we add JavaScript to our HTML structure to make the website interactive.</li>
+            <li>These HTML elements are usually composed of an opening tag and a closing tag represented with angle brackets '< >'. These tags contain everything that we want to include in the element. This can include content and even other nested elements.</li>
+            <li>However, two elements are especially important to understanding how the structure works: the 'head' and 'body' elements. </li>
+            <li>The 'head' element contains information, or metadata, that helps the browser to render the page correctly. Elements included within the 'head' are not visible when a user looks at a webpage.</li>
+            <li>The 'body' element contains the content that is shown to the user. All the elements that we want the user to see and interact with must be placed inside this element.</li>
+            <li>Start your HTML code with '!DOCTYPE html' to let the browser know what type of document it is</li>
+            <li>Next, use 'html' to know when our HTML document begins</li>
+            <li>Add a “lang” attribute to let the browser know what language this site/page is in. For our example, we use 'html lang=”en”' to tell the browser the site is in English.</li>
+        </ul>
+        <h3>HEAD Element Basics</h3>
+        <ul>
+          <li>The  'head' element is a container for <b>metadata</b>. 'meta' elements contain information about the page that is used by the browser. The user won’t see information in the 'head' or 'meta' elements.</li>
+          <li>The 'head' element contains the metadata for our web application. Metadata is data about our webpage that the browser uses to effectively serve our webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance.</li>
+          <li>Inside the 'head' element, we can use the following metadata tags:
+            <br>The 'title' element defines the title for a webpage. This element is required and is extremely important for Search Engine Optimization (SEO).
+            <br>The 'style' element defines the CSS styles associated with a website.
+            <br>The 'base' element defines the base URL for a webpage.
+            <br>The 'link' element connects an external resource to the HTML document.
+            <br>The 'meta' element defines metadata such as the character set, description, keywords, author, and viewport.
+            <br>The 'script' element embeds client-side scripts in the HTML document.
+          </li>
+        </ul>
+        <h3>BODY Element Basics</h3>
+        <ul>
+          <li>The body of an HTML document includes the content that users see when they look at the webpage in a browser.</li>
+          <li>Elements that are nested inside other elements are called <b>child elements.</b></li>
+          <li>The 'body' element is an example of a <b>semantic HTML element.</b>
+              <br>In semantic HTML elements, the name of the element describes its content and the role it plays on a webpage. 
+              <br>When possible, it is important to use semantic HTML elements, because they make your HTML easier to read by other developers and the browser. 
+              <br>Semantic HTML also plays an important role in making sure your webpage is accessible to the widest variety of users, including those who use assistive technologies such as screen readers.
+          </li>
+          <li>Not all elements are semantic, though. It is still common to see <b>non-semantic elements</b> such as 'div' to create a division in the page, or 'span' to create an inline division.
+            <br>Sometimes these are simply the most efficient solution to a structural problem the developer is trying to solve. The most important thing to keep in mind is that it is best practice to use semantic elements whenever possible, especially when the content is visible to users.
+          </li>
+          <li>When working with visible HTML elements, the content is contained between an <b>opening tag</b> and a <b>closing tag.</b></li>
+          <li>The words “element” and “tag” are commonly used interchangeably in the web development world, but it is important to know the difference. 
+            <br>An <b>element</b> refers to the entire element from opening tag to closing tag
+            <br>A <b>tag</b> refers only to what appears inside the angle brackets.
+          </li>
+          <li>The 'h1', 'h2', 'h3', 'h4', 'h5' and 'h6' elements represent the level of heading a given text block represents.
+            <br>Order matters! When using headings, it is important that we use heading tags in order from 'h1' to 'h6' to make the page accessible to users who access the page using screen readers or other devices. 
+            <br>In addition, the biggest heading, 'h1', should only appear once on each page.
+          </li>
+          <li>A list of some child elements inside the 'body' tag
+            <br>The 'p' element represents a paragraph or block of text. You'll use this element extensively to wrap most of the text on your webpages.
+            <br>The 'ul', 'ol', and 'li' elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists.
+            <br>The 'img' element contains information about images that are displayed on the webpage. The 'img' element can contain various attributes; the src attribute is the most important because it defines the location of the image
+            <br>In an 'img src=”” alt=””' tag, the alt text is important for screen readers and other assistive technologies. Alt text can also improve search engine rankings for your website.
+            <br>The 'br' element creates a line of empty space, or a line break, between two blocks of content. 
+            <br>For hyperlinks, the 'a' element (which stands for anchor) creates links to the same webpage or other webpages. The href attribute points to the URL for the link.
+          </li>
+          <li>The 'footer' appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</li>
         </ul>
       </section>
 
@@ -47,7 +113,7 @@
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <p></p>
     </footer>
   </body>
 </html>
