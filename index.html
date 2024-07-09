@@ -98,9 +98,159 @@
 
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <h3>Git Basics & Git/GitHub Comparison</h3>
         <ul>
+          <li><b>Git</b> is the most commonly used version control software among developers and a tool that you will likely use on the job.</li>
+          <li>Git is a version control system that lets you manage and keep track of each version of your project.
+            <br>Git is accessed through the command line on our computer
+            <br>Git is used to save and track versions of your code. It is also used to initiate a repo, add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.
+            <br>Git is a great tool for tracking our versions and code, but can only be used locally
+          </li>
+          <li><a href="https://github.com"><b>GitHub</b></a> is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.
+            <br>Using GitHub not only allows us to store our code, but also to easily collaborate with others.
+            <br>It is important to note that while GitHub is popular, there are other Git-based repository hosting services, such as <b>Bitbucket</b> and <b>SourceForge</b>. However, for this course, we will use GitHub, which is free, to share work and collaborate.
+          </li>
+          <li>Review Git cheatsheet <a href="https://education.github.com/git-cheat-sheet-education.pdf">here</a></li>
           <li>git status: checks what branch we are currently on</li>
+          <li>Be sure to set up a global username and email using the following:
+            <ul>
+              <li>git config --global --replace-all user.name "username"</li>
+              <li>git config --global --replace-all user.email "email@email"</li>
+            </ul>
+          </li>
+          <li><h4>Repositories</h4></li>
+          <li>Repositories are directories or files that contain all project files</li>
+          <li>Repositories can be made locally using git init, but we will creating repositories in GitHub and then cloning them to our local machine</li>
+          <li><h4>Branches</h4></li>
+          <li>There can be different types of branches:</li>
+          <li><b>Feature branch</b>
+            <br>When a developer is working on implementing or improving a single feature of the project
+          </li>  
+          <li><b>Develop branch</b>
+            <br>When a single or team of developers is working on a major feature or set of features that may drastically change the product
+            <br>These branches often have “sub” feature branches for all these features to be worked on, and will be pulled to the develop branch first before being eventually deployed to the main branch
+          </li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>You should always use git pull origin main to ensure you are working with the current version of the main branch</li>
+          <li><h4>Stage and Commit</h4></li>
+          <li>To stage changed files in your branch:
+            <br>git add -A OR git add [file]
+            <br>use git restore [file] to remove files from stage
+          </li>
+          <li>To commit your changes to the branch, use git commit -m "[message on what was changed]" </li>
+          <li>Every commit should be a unique change to be able to succesfully and easily track and remedy bugs</li>
+          <li>Once you have commited, you should merge (if working locally) or pull (if working with GitHub)</li>
+        </ul>
+        <h3>GitHub Basics</h3>
+        <ul>
+          <li>Github is the web interface for Git, a version control software, that allows multiple people to make separate changes to a program at the same time without getting in each others way</li>
+          <h4><li>Github terms</li></h4>
+          <li><b>Repository or repo</b>
+            <br>Every project on Github is a repository
+            <br>It is a folder that contains all the files and their revision history
+          </li>
+          <li><b>Branch</b>
+            <br>Workspace where you can make changes that don’t affect the live site or other files in the repo
+            <br>Create a new branch for your work and name it best to describe the work
+          </li>
+          <li><b>Fork</b>
+            <br>A new repository that inherits from a parent “upstream” repo. It is used to suggest changes to an “upstream” public repo by someone who doesn’t have access to edit in the repo’s home org.
+          </li>
+          <li><b>Markdown file</b>
+            <br>The way content files are formatted in github
+            <br>A way to write for the web using plain text that easily converts to HTML
+          </li>
+          <li><b>Commit (changes)</b>
+            <br>Save a new version of the file you are working on
+            <br>Whenever you add, edit, or delete a file, you’re making a commit
+            <br>Adds a change to your branch
+          </li>
+          <li><b>Pull request “PR”</b>
+            <br>Asking for changes on a branch to merge into another branch
+            <br>Way to discuss and review your work with others
+          </li>
+          <li><b>Merge</b>
+            <br>When a PR is approved, changes are pulled in or merged into the main branch
+            <br>Changes publish/deploy to the live site one this happens
+          </li>
+          <li><b>Issue</b>
+            <br>Way to report new tasks or content fixes
+            <br>Track progress on a project board
+            <br>Open an issue for a new task and close once done
+          </li>
+          <li><h4>Updating content</h4></li>
+          <li><b>Assigning tasks:</b>
+            <br>Done in GitHub Issues/Projects</li>
+          <li><b>Writing and editing documents for the project:</b>
+            <br>Done in Word or Google Docs</li>
+          <li><b>Producing (writing code)</b>
+            <br>Done in Github/Github Desktop or Markdown Text Editor/IDE (Atom, VS Code, etc.)</li>
+          <li><b>Publishing </b>
+            <br>Done in Github</li>
+          <li><b>Revising</b>
+            <br>Github or MD/IDE</li>
+          <li><b>If I wanted to make a content change….</b>
+            <br>Create a new branch off the most recent version of the main branch
+            <br>Add commits
+            <br>One done, open a pull request
+            <br>Discuss and review (should be done by another teammate)
+            <br>Then merge and deploy your changes
+          </li>
+          <li><h4>Set up SSH Keys to Initally Connect Git to GitHub</h4></li>
+          <li>To initally connect your local Git to GitHub, you will need to create an SSH key in terminal and conenct it to your GitHub account</li>
+          <li>To create and connect your local SSH key to GitHub:
+            <ol>
+              <li>First, check for SSH keys; following the instructions <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys">here</a></li>
+              <li>If you alreay have a public AND private SSH key, you can skip the next step and move on to step 4</li>
+              <li>To create a new SSH key, follow the steps <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key">here</a></li>
+              <li>Next, you will add the SSH to ssh-agent following the steps <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent">here</a></li>
+              <li>Finally, you will add the SSH key to your GitHub account following the steps <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">here</a></li>
+            </ol>
+          </li>
+          <li><h4>Creating a Repository</h4></li>
+          <li>When creating a new repo:
+            <br>We should usually include a readme.md file
+            <br>We should usually include a .gitignore file
+            <br>(This allows us to have files in the repo that we do NOT want uploaded to the cloud. (i.e., ssh keys or login info))
+            <br>We should almost always select a license
+            <br>MIT license is the most open/unrestricted license we can choose and will be the one we choose in this course
+          </li>
+          <li>When naming a repository, it's important to remember the following conventions:
+            <br>Be unique and descriptive for each repository name.
+            <br>Use all lowercase letters.
+            <br>Use dashes; we can't have spaces in our repository names, so we use dashes instead.
+            <br>Be consistent! Our GitHub account will follow us throughout our web development career, so show it some love.
+          </li>
+          <li>Add a description to your repository. Be concise and clear with your project descriptions.</li>
+          <li>Use “git clone [GitHub provided URL]” to download your repo to your local machine
+            <br>Make sure you are in the directory that you want to clone it to
+            <br>User git remote -v to track what URLs you need to use to fetch or push files
+          </li>
+          <li>Create GitHub Issues using Markdown</li>
+          <li>GitHub offers a task management tool called GitHub issues, which gives developers and teams an easy way to keep track of key tasks and progress. Think of it as a built-in to-do list right inside our GitHub repository.</li>
+          <li>GitHub issues can also help teams to do the following:
+            <br>Track, organize, and communicate ideas, tasks, bugs, and enhancements.
+            <br>Identify bottlenecks or blockers that could prevent work progress.
+            <br>Avoid duplicating work by assigning tasks or issues.
+          </li>
+          <li><h4>Pulling Branch Changes, Pull Requests, and Merges</h4></li>
+          <li>To pull your branch changes from your local machine in Git</li>
+          <ul>
+            <li>First, double check you are working with the latest version of the code with git pull origin main</li>
+            <li>Next, push your changes for your branch with git push origin [branch name]</li>
+            <li>If you are done with the branch, you should pull and merge in GitHub, and then delete the branch on both GitHub and your local machine</li>
+            <li>To delete a branch from your local machine (should only be done AFTER you pull and merge), use git checkout main to switch to your main branch, then use git branch -d [branch name] to delete</li>
+            <li>Once you delete a branch, you should pull your main again to ensure all changes are up to date using git pull origin main</li>
+          </ul>
+          <li>Once you have pulled the branch changes to GitHub using the first two steps above, you should create a pull request</li>
+            <ul>
+              <li>To do this, first go to GitHub repository in your browser</li>
+              <li>Then switch to the branch you want to pull from the branch drop down menu</li>
+              <li>Then click "Compare & pull request</li>
+              <li>Then, give a detailed yet concise description of what was changed, then click create pull request</li>
+              <li>In most professional and/or collaborative settings, this would now go a colleague or superior for review</li>
+              <li>Once you create the pull request (and if needed, it is approved by someone), you can now merge your changes with the main branch using "Merge Pull Request"</li>
+            </ul>
         </ul>
       </section>
 
