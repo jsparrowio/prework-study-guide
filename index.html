@@ -102,8 +102,111 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <h3>CSS Basics</h3>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>To add style to our webpage, we will use <b>Cascading Style Sheets (CSS)</b>, which is a programming language used by developers to define how webpage content is presented to users</li>
+            <ul>
+              <li>Whereas HTML strictly handles the structure and content of a webpage, CSS defines the colors, aesthetics, visual layout, and organization</li>
+              <li>We use CSS to define style rules for specific elements of an HTML page and format them using a wide range of style options</li>
+            </ul>
+          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet</li>
+          <li><b>Inline CSS</b></li>  
+            <ul>
+              <li>Used when a developer wants to style an element directly in the HTML file</li>
+              <li>Useful for quick and permanent changes, but less flexible than other types</li>
+              <li>An example could be <code>&lt;h1 style =”color:red;”&gt;</code></li>
+            </ul>
+          <li><b>Internal CSS style sheet</b></li>
+            <ul>
+              <li>Used to embed an entire stylesheet directly in the HTML file using a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> element</li>
+              <li>This internal style sheet contains CSS rules for the webpage in the head section of the HTML file</li>
+              <li>The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code</li>
+              <li>An example is:
+              <pre>&lt;head&gt;
+  &lt;style&gt;
+    h1 {
+      color: red;
+      } 
+  &lt;/style&gt;           
+ &lt;/head&gt;</pre></li>
+              <li>This example would make all <code>&lt;h1&gt;</code> elements red for this HTML file</li>
+              <li>This method is totally acceptable, but most websites use the external CSS style sheet method</li>
+            </ul>
+          <li><b>External CSS style sheet</b></li>
+            <ul>
+              <li>Most common use of CSS style sheets</li>
+              <li>Preferred because it allows developers to keep all their CSS rules in a separate file, which makes design changes easier</li>
+              <li>When using an external style sheet, we link the file using a <code>&lt;link&gt;</code> element placed in the HTML's <code>&lt;head&gt;</code></li>
+              <li>An example is:
+                <pre>&lt;head&gt;
+  &lt;link rel=”stylesheet” href =”./assets/style.css” /&gt;
+&lt;/head&gt;</pre></li>
+              <li>This example links (or includes) the CSS style sheet in our page which then implements all style properties to the linked elements in out page or site</li>
+              <li><b>Important:</b> when using an external CSS sheet, always remember to link it in whatever pages you want to use it in (or a master header if using one) otherwise your styling won't appear at all!</li>
+            </ul>
+          </ul>
+          <h3>CSS Rules & Terms</h3>
+          <ul>
+          <li>When defining a CSS rule, you will have a <b>selector</b>, <b>declaration block</b>, <b>declatations</b>, <b>properties</b>, and <b>values</b></li>
+          <li>An example of a CSS rule is: <code>div {color:blue; text-align: justify;}</code></li>
+          <li>In this exaple:</li>
+            <ul>
+              <li><code>div</code> acts as the <b>selector</b></li>
+              <li><code>{ }</code> is the <b>declaration block</b></li>
+              <li><code>color:blue;</code> and <code>text-align: justify;</code> are <b>declarations</b></li>
+              <li><code>color</code> and <code>text-align</code> are <b>properties</b></li>
+              <li><code>blue</code> and <code>justify</code> are the <b>values</b></li>
+            </ul>
+          <li>The <b>selector</b> defines the element or attributes to which the rules, or declarations, will apply</li>
+          <li><b>Declarations</b> contain two important components: the CSS property we want to apply and the value of the property. For example, the declaration <code>color: blue;</code> includes the CSS property <code>color</code> and the value for that property, <code>blue</code></li>
+          <li>For the <code>color</code> property, you can use semantic references such as blue or gray, but you can also use hex # OR RGB numbers to define a color. Find a list of the HEX values <a href="https://htmlcolorcodes.com/">here</a></li>
+        </ul>
+        <h4>CSS Selectors & Properties</h4>
+        <ul>
+          <li><b>Selectors</b> can be used to define style for any visible HTML element</li>
+          <li><b>Properties</b> are the "options" of style you can give to the content inside or outside the element
+          </li>
+          <li>The <code>padding</code> property is often confused with <code>margin</code>, but it is not the same thing. The <code>padding</code> property adds space around the content <b>inside</b> an element. When you increase padding, you are actually making the entire element bigger! That is because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer outside an element</li>
+          <li>To understand this better, it is important to know that every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, and content. This is sometimes referred to as the <b>CSS box model</b></li>
+          <li>Sometimes, we want to apply a rule to ALL the elements visible on the page. To do that, we use a special wild card symbol, or <code>*</code></li>
+          <li>You can combine two selectors into a single CSS rule with a comma, allowing the declarations to affect both selectors. Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together. This helps us write <b>Do Not Repeat Yourself (DRY) code</b></li>
+            <ul>
+              <li>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase.</li>
+            </ul>
+          <li><code>text-align: center;</code> is one way to center a title or heading on a webpage.</li>
+          <li>The <code>img</code> selector assigns property values to any image element in the markup.</li>
+          <li>To give an example of how to format your CSS rules, here is an example of the <code>img</code> selector:
+          <pre>img {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}</pre>
+          </li>
+          <li>The <code>display</code> property is assigned with the <code>block</code> value, which assigns each image to start on a new line. The <code>height</code> and <code>width</code> are assigned number values, which will stay constant on the browsers. The <code>margin</code> values are assigned <code>auto</code>, which will cause the margins to adjust based on the display</li>
+          <li>Additional properties, to name a few, could be:</li>
+            <ul>
+              <li><code>font-size</code> which would define the size of the font (ex: <code>font-size: 12px;</code>)</li>
+              <li><code>font-family</code> which would define the type of font (ex: <code>font-family: monospace;</code>)</li>
+              <li><code>border</code> which would define a visible border to the element (ex: <code>border: 1px solid black;</code>)</li>
+              <li><code>background-color</code> which would define the color of the backround of the element (ex: <code>background-color: blue;</code>)</li>
+              <li><code>box-shadow</code> which would define a drop-shadow for the box (ex: <code>box-shadow: 5px 10px #888888;</code>)</li>
+            </ul>
+        </ul>
+      <h4>Adding Class Attributes</h4>
+        <ul>
+          <li><b>Class attributes</b> allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule</li>
+          <li>This would be used in a scenario where we would like to add styles to certain elements, but not all the elements</li>
+          <li>To achieve this, we would add a <code>.</code> in front of the selector in our stylesheet, and the selector would be a name we choose</li>
+            <ul> 
+              <li>An example of a selector would be <code>.card</code></li>
+            </ul>
+          <li>This would be implemented into your element using <code>class="(selector name)"</code></li>
+            <ul>
+              <li>A full example of this would be <code>&lt;section class="card"&gt;</code></li>
+              <li>Notice that the class attribute does not have the <code>.</code> in front of the selector name! The <code>.</code> is only used on the stylesheet, not the HTML code</li>
+            </ul>
         </ul>
       </section>
 
