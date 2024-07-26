@@ -1,6 +1,6 @@
 <!--University of Minnesota Coding Bootcamp Prework Study Guide
-Base code provided by edX and their respective developers; written code by Joshua Garrett (dev id: jsparrowio) with guidance from the UoM Bootcamp Prework Modules
-Find Josh on GitHub and other platforms with jsparrowio username-->
+Base code and content provided by edX and their respective developers; written code and content by Joshua Garrett (dev handle: jsparrowio) with guidance from the UoM Bootcamp Prework Modules and other sources
+Find Josh on GitHub and other platforms with jsparrowio handle-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,8 +23,8 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
         <h2>HTML</h2>
         <h3>HTML Basics</h3>
         <ul>
-          <li>HTML stands for <b>Hypertext Markup Language (HTML)</b>, which is used to give the content structure.</li>
-          <li>HTML is one of the three cornerstone languages used in web development: HTML, CSS, and JS.</li>
+          <li>HTML stands for <b>Hypertext Markup Language (HTML)</b>, which is used to give the content structure</li>
+          <li>HTML is one of the three cornerstone languages used in web development: HTML, CSS, and JS</li>
           <li>An <b>element</b> is a type of content on a webpage. The following element types are commonly used to add content to pages:</li>
             <ul>
               <li><b>Text elements</b></li>
@@ -32,7 +32,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li><b>Header elements</b></li>
               <li><b>List elements</b></li>
             </ul>
-          <li>In addition to elements that can be seen on the page, elements are also used to divide the content on the page and to describe the content to browsers and other developers.</li>
+          <li>In addition to elements that can be seen on the page, elements are also used to divide the content on the page and to describe the content to browsers and other developers</li>
           <li>Here are some common element types that are used to divide and describe a page:</li>
             <ul>
               <li><b>Meta-related elements</b></li>
@@ -40,64 +40,65 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li><b>Semantic elements</b></li>
             </ul>
           <li>As developers, one of the first things we must think about when developing a webpage is building a sturdy "frame" using HTML</li>
-          <li>First, we use HTML to build a sturdy frame, using HTML elements as our frame’s building blocks. Next, we add CSS to define the style. Finally, we add JavaScript to our HTML structure to make the website interactive.</li>
-          <li>These HTML elements are usually composed of an opening tag and a closing tag represented with angle brackets <code>&lt; &gt;</code>. These tags contain everything that we want to include in the element. This can include content and even other nested elements.</li>
-          <li>However, two elements are especially important to understanding how the structure works: the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements. </li>
-          <li>The  <code>&lt;head&gt;</code> element contains information, or metadata, that helps the browser to render the page correctly. Elements included within the <code>&lt;head&gt;</code> are not visible when a user looks at a webpage.</li>
-          <li>The <code>&lt;body&gt;</code> element contains the content that is shown to the user. All the elements that we want the user to see and interact with must be placed inside this element.</li>
+          <li>First, we use HTML to build a sturdy frame, using HTML elements as our frame’s building blocks. Next, we add CSS to define the style. Finally, we add JavaScript to our HTML structure to make the website interactive</li>
+          <li>These HTML elements are usually composed of an opening tag and a closing tag represented with angle brackets <code>&lt; &gt;</code>. These tags contain everything that we want to include in the element. This can include content and even other nested elements</li>
           <li>Start your HTML code with <code>&lt;!DOCTYPE html&gt;</code> to let the browser know what type of document it is</li>
           <li>Next, use <code>&lt;html&gt;</code> to know when our HTML document begins</li>
-          <li>Add a <code>lang</code> attribute to let the browser know what language this site/page is in. For our example, we use <code>&lt;html lang=”en”&gt;</code> to tell the browser the site is in English.</li>
+          <li>Add a <code>lang</code> attribute to let the browser know what language this site/page is in. For our example, we use <code>&lt;html lang=”en”&gt;</code> to tell the browser the site is in English</li>         
+          <li>However, two elements are especially important to understanding how the structure works: the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements </li>
+          <li>The  <code>&lt;head&gt;</code> element contains information, or metadata, that helps the browser to render the page correctly. Elements included within the <code>&lt;head&gt;</code> are not visible when a user looks at a webpage</li>
+          <li>The <code>&lt;body&gt;</code> element contains the content that is shown to the user. All the elements that we want the user to see and interact with must be placed inside this element</li>
+          <li>Use <code>&lt;!--comment--&gt;</code> to make comments in your HTML file</li>
         </ul>
-        <h3>HEAD Element Basics</h3>
+        <h4>HEAD Element Basics</h4>
         <ul>
-          <li>The <code>&lt;head&gt;</code> element is a container for <b>metadata</b>. <code>&lt;meta&gt;</code> elements contain information about the page that is used by the browser. The user won’t see information in the <code>&lt;head&gt;</code> or <code>&lt;meta&gt;</code> elements.</li>
-          <li>The <code>&lt;head&gt;</code> element contains the metadata for our web application. Metadata is data about our webpage that the browser uses to effectively serve our webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance.</li>
+          <li>The <code>&lt;head&gt;</code> element is a container for <b>metadata</b>. <code>&lt;meta&gt;</code> elements contain information about the page that is used by the browser. The user won’t see information in the <code>&lt;head&gt;</code> or <code>&lt;meta&gt;</code> elements</li>
+          <li>The <code>&lt;head&gt;</code> element contains the metadata for our web application. Metadata is data about our webpage that the browser uses to effectively serve our webpage to users. Metadata is typically not seen by users, but it contains important information about accessibility, search engines, and performance</li>
           <li>Inside the <code>&lt;head&gt;</code> element, we can use the following metadata tags:</li>
             <ul>
-              <li>The <code>&lt;title&gt;</code> element defines the title for a webpage. This element is required and is extremely important for Search Engine Optimization (SEO).</li>
-              <li>The <code>&lt;style&gt;</code> element defines the CSS styles associated with a website.</li>
-              <li>The <code>&lt;base&gt;</code> element defines the base URL for a webpage.</li>
-              <li>The <code>&lt;link&gt;</code> element connects an external resource to the HTML document.</li>
-              <li>The <code>&lt;meta&gt;</code> element defines metadata such as the character set, description, keywords, author, and viewport.</li>
-              <li>The <code>&lt;script&gt;</code> element embeds client-side scripts in the HTML document.</li>
+              <li>The <code>&lt;title&gt;</code> element defines the title for a webpage. This element is required and is extremely important for Search Engine Optimization (SEO)</li>
+              <li>The <code>&lt;style&gt;</code> element defines the CSS styles associated with a website</li>
+              <li>The <code>&lt;base&gt;</code> element defines the base URL for a webpage</li>
+              <li>The <code>&lt;link&gt;</code> element connects an external resource to the HTML document</li>
+              <li>The <code>&lt;meta&gt;</code> element defines metadata such as the character set, description, keywords, author, and viewport</li>
+              <li>The <code>&lt;script&gt;</code> element embeds client-side scripts in the HTML document</li>
            </ul>
         </ul>
-        <h3>BODY Element Basics</h3>
+        <h4>BODY Element Basics</h4>
         <ul>
-          <li>The body of an HTML document includes the content that users see when they look at the webpage in a browser.</li>
-          <li>Elements that are nested inside other elements are called <b>child elements.</b></li>
-          <li>The <code>&lt;body&gt;</code> element is an example of a <b>semantic HTML element.</b></li>
+          <li>The body of an HTML document includes the content that users see when they look at the webpage in a browser</li>
+          <li>Elements that are nested inside other elements are called <b>child elements</b></li>
+          <li>The <code>&lt;body&gt;</code> element is an example of a <b>semantic HTML element</b></li>
             <ul>
-              <li>In semantic HTML elements, the name of the element describes its content and the role it plays on a webpage.</li>
-              <li>When possible, it is important to use semantic HTML elements, because they make your HTML easier to read by other developers and the browser.</li>
-              <li>Semantic HTML also plays an important role in making sure your webpage is accessible to the widest variety of users, including those who use assistive technologies such as screen readers.</li>
+              <li>In semantic HTML elements, the name of the element describes its content and the role it plays on a webpage</li>
+              <li>When possible, it is important to use semantic HTML elements, because they make your HTML easier to read by other developers and the browser</li>
+              <li>Semantic HTML also plays an important role in making sure your webpage is accessible to the widest variety of users, including those who use assistive technologies such as screen readers</li>
             </ul>
-          <li>Not all elements are semantic, though. It is still common to see <b>non-semantic elements</b> such as <code>&lt;div&gt;</code> to create a division in the page, or <code>&lt;span&gt;</code> to create an inline division.</li>
+          <li>Not all elements are semantic, though. It is still common to see <b>non-semantic elements</b> such as <code>&lt;div&gt;</code> to create a division in the page, or <code>&lt;span&gt;</code> to create an inline division</li>
             <ul>
-              <li>Sometimes these are simply the most efficient solution to a structural problem the developer is trying to solve. The most important thing to keep in mind is that it is best practice to use semantic elements whenever possible, especially when the content is visible to users.</li>
+              <li>Sometimes these are simply the most efficient solution to a structural problem the developer is trying to solve. The most important thing to keep in mind is that it is best practice to use semantic elements whenever possible, especially when the content is visible to users</li>
             </ul>
-          <li>When working with visible HTML elements, the content is contained between an <b>opening tag</b> and a <b>closing tag.</b></li>
-          <li>The words “element” and “tag” are commonly used interchangeably in the web development world, but it is important to know the difference.</li>
+          <li>When working with visible HTML elements, the content is contained between an <b>opening tag</b> and a <b>closing tag</b></li>
+          <li>The words “element” and “tag” are commonly used interchangeably in the web development world, but it is important to know the difference</li>
             <ul>
               <li>An <b>element</b> refers to the entire element from opening tag to closing tag</li>
-              <li>A <b>tag</b> refers only to what appears inside the angle brackets.</li>
+              <li>A <b>tag</b> refers only to what appears inside the angle brackets</li>
             </ul>
-          <li>The <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements represent the level of heading a given text block represents.</li>
+          <li>The <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> elements represent the level of heading a given text block represents</li>
             <ul>  
-              <li>Order matters! When using headings, it is important that we use heading tags in order from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> to make the page accessible to users who access the page using screen readers or other devices.</li>
-              <li>In addition, the biggest heading, <code>&lt;h1&gt;</code>, should only appear once on each page.</li>
+              <li>Order matters! When using headings, it is important that we use heading tags in order from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> to make the page accessible to users who access the page using screen readers or other devices</li>
+              <li>In addition, the biggest heading, <code>&lt;h1&gt;</code>, should only appear once on each page</li>
             </ul>
           <li>A list of some child elements inside the <code>&lt;body&gt;</code> tag</li>
             <ul>
-              <li>The <code>&lt;p&gt;</code> element represents a paragraph or block of text. You'll use this element extensively to wrap most of the text on your webpages.</li>
-              <li>The <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists.</li>
+              <li>The <code>&lt;p&gt;</code> element represents a paragraph or block of text. You'll use this element extensively to wrap most of the text on your webpages</li>
+              <li>The <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists</li>
               <li>The <code>&lt;img&gt;</code> element contains information about images that are displayed on the webpage. The <code>&lt;img&gt;</code> element can contain various attributes; the <code>src</code> attribute is the most important because it defines the location of the image</li>
-              <li>In an <code>&lt;img src=”” alt=””&gt;</code> tag, the alt text is important for screen readers and other assistive technologies. Alt text can also improve search engine rankings for your website.</li>
-              <li>The <code>&lt;br&gt;</code> element creates a line of empty space, or a line break, between two blocks of content.</li>
-              <li>For hyperlinks, the <code>&lt;a&gt;</code> element (which stands for anchor) creates links to the same webpage or other webpages. The <code>href</code> attribute points to the URL for the link.</li>
+              <li>In an <code>&lt;img src=”” alt=””&gt;</code> tag, the alt text is important for screen readers and other assistive technologies. Alt text can also improve search engine rankings for your website</li>
+              <li>The <code>&lt;br&gt;</code> element creates a line of empty space, or a line break, between two blocks of content</li>
+              <li>For hyperlinks, the <code>&lt;a&gt;</code> element (which stands for anchor) creates links to the same webpage or other webpages. The <code>href</code> attribute points to the URL for the link</li>
             </ul>
-          <li>The <code>&lt;footer&gt;</code> appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</li>
+          <li>The <code>&lt;footer&gt;</code> appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation</li>
         </ul>
       </section>
 
@@ -148,9 +149,9 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
           </ul>
           <h3>CSS Rules & Terms</h3>
           <ul>
-          <li>When defining a CSS rule, you will have a <b>selector</b>, <b>declaration block</b>, <b>declatations</b>, <b>properties</b>, and <b>values</b></li>
+          <li>When defining a CSS rule, you will have a <b>selector</b>, <b>declaration block</b>, <b>declarations</b>, <b>properties</b>, and <b>values</b></li>
           <li>An example of a CSS rule is: <code>div {color:blue; text-align: justify;}</code></li>
-          <li>In this exaple:</li>
+          <li>In this example:</li>
             <ul>
               <li><code>div</code> acts as the <b>selector</b></li>
               <li><code>{ }</code> is the <b>declaration block</b></li>
@@ -172,10 +173,10 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
           <li>Sometimes, we want to apply a rule to ALL the elements visible on the page. To do that, we use a special wild card symbol, or <code>*</code></li>
           <li>You can combine two selectors into a single CSS rule with a comma, allowing the declarations to affect both selectors. Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together. This helps us write <b>Do Not Repeat Yourself (DRY) code</b></li>
             <ul>
-              <li>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase.</li>
+              <li>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase</li>
             </ul>
-          <li><code>text-align: center;</code> is one way to center a title or heading on a webpage.</li>
-          <li>The <code>img</code> selector assigns property values to any image element in the markup.</li>
+          <li><code>text-align: center;</code> is one way to center a title or heading on a webpage</li>
+          <li>The <code>img</code> selector assigns property values to any image element in the markup</li>
           <li>To give an example of how to format your CSS rules, here is an example of the <code>img</code> selector:
           <pre>img {
   display: block;
@@ -191,7 +192,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li><code>font-size</code> which would define the size of the font (ex: <code>font-size: 12px;</code>)</li>
               <li><code>font-family</code> which would define the type of font (ex: <code>font-family: monospace;</code>)</li>
               <li><code>border</code> which would define a visible border to the element (ex: <code>border: 1px solid black;</code>)</li>
-              <li><code>background-color</code> which would define the color of the backround of the element (ex: <code>background-color: blue;</code>)</li>
+              <li><code>background-color</code> which would define the color of the background of the element (ex: <code>background-color: blue;</code>)</li>
               <li><code>box-shadow</code> which would define a drop-shadow for the box (ex: <code>box-shadow: 5px 10px #888888;</code>)</li>
             </ul>
         </ul>
@@ -215,20 +216,23 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
         <h2>Git</h2>
         <h3>Git Basics & Git/GitHub Comparison</h3>
         <ul>
-          <li><b>Git</b> is the most commonly used version control software among developers and a tool that you will likely use on the job.</li>
-          <li>Git is a version control system that lets you manage and keep track of each version of your project.</li>
+          <li><b>Git</b> is the most commonly used version control software among developers and a tool that you will likely use on the job</li>
+          <li>Git is a version control system that lets you manage and keep track of each version of your project</li>
             <ul>  
-              <li>Git is accessed through the command line on our computer</li>
-              <li>Git is used to save and track versions of your code. It is also used to initiate a repo, add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.</li>
+              <li>Git is accessed through the command line (terminal on macOS/Linux systems, git bash on Windows) on our computer using the <code>git</code> command</li>
+                <ul>
+                  <li>The <code>git</code> command works out-of-the-box on macOS, but will require installation of software on Windows and Linux before first use. macOS will also require additional software installed, but will do so automatically when you use the <code>git</code> command for the first time</li>
+                </ul>
+              <li>Git is used to save and track versions of your code. It is also used to initiate a <b>repository</b> (or <b>repo</b>), add our code to the repo, and view the different versions of our code, which are each stored in a unique <b>commit</b></li>
               <li>Git is a great tool for tracking our versions and code, but can only be used locally</li>
             </ul>
-          <li><a href="https://github.com"><b>GitHub</b></a> is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
+          <li><a href="https://github.com"><b>GitHub</b></a> is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely</li>
             <ul>
-              <li>Using GitHub not only allows us to store our code, but also to easily collaborate with others.</li>
-              <li>It is important to note that while GitHub is popular, there are other Git-based repository hosting services, such as <b>Bitbucket</b> and <b>SourceForge</b>. However, for this course, we will use GitHub, which is free, to share work and collaborate.</li>
-              <li>GitHub will also act as your portfolio of code to show you skills to potential employers</li>
+              <li>Using GitHub not only allows us to store our code, but also to easily collaborate with others</li>
+              <li>It is important to note that while GitHub is popular, there are other Git-based repository hosting services, such as <b>Bitbucket</b> and <b>SourceForge</b>. However, for this course, we will use GitHub, which is free, to share work and collaborate</li>
+              <li>GitHub will also act as your portfolio of code to show your skills to potential employers</li>
             </ul>
-          <li>Review Git cheatsheet <a href="https://education.github.com/git-cheat-sheet-education.pdf">here</a></li>
+          <li>Review Git command cheatsheet <a href="https://education.github.com/git-cheat-sheet-education.pdf">here</a></li>
           <li><code>git status</code> checks what branch we are currently on</li>
           <li>Be sure to set up a global username and email using the following:
             <ul>
@@ -244,6 +248,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
         </ul>
         <h4>Branches</h4>
         <ul>
+          <li>Branches are used to make changes, additions, or deletions without affecting the main and/or deployed source code. It is always best practice to use a branch for any and all changes</li>
           <li>There can be different types of branches:</li>
             <ul>
               <li><b>Feature branch</b></li>
@@ -257,7 +262,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
                 </ul>
             </ul>
           <li><code>git checkout -b branch-name</code> creates a new branch and switches to it</li>
-          <li>You should always use <code>git pull origin main</code> to ensure you are working with the current version of the main branch (if working with a remote repo)</li>
+          <li>You should always use <code>git pull origin main</code> to ensure you are working with the current version of the main branch (if working with a remote repo) before you create a new branch and before you push commits to GitHub</li>
           <li>Use <code>git checkout main</code> to switch back to your main branch once you are done working in your branch</li>
         </ul>
         <h4>Stage and Commit</h4>
@@ -268,8 +273,8 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li>use <code>git restore [file]</code> to remove files from stage</li>
             </ul>
           <li>To commit your changes to the branch, use <code>git commit -m "[message on what was changed]"</code> </li>
-          <li>Every commit should be a unique change to be able to succesfully and easily track and remedy bugs</li>
-          <li>Once you have commited, you should merge (if working locally and done with all feature changes) or pull (if working with GitHub or any other remote Git platform)</li>
+          <li>Every commit should be a unique change to be able to successfully and easily track and remedy bugs</li>
+          <li>Once you have committed, you should merge (if working locally and done with all feature changes) or pull (if working with GitHub or any other remote Git platform)</li>
         </ul>
         <h3>GitHub Basics</h3>
         <ul>
@@ -287,7 +292,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
             <br>Create a new branch for your work and name it best to describe the work
           </li>
           <li><b>Fork</b>
-            <br>A new repository that inherits from a parent “upstream” repo. It is used to suggest changes to an “upstream” public repo by someone who doesn’t have access to edit in the repo’s home org.
+            <br>A new repository that inherits from a parent “upstream” repo. It is used to suggest changes to an “upstream” public repo by someone who doesn’t have access to edit in the repo’s home org
           </li>
           <li><b>Markdown file</b>
             <br>The way content files are formatted in GitHub
@@ -295,7 +300,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
           </li>
           <li><b>Commit (changes)</b>
             <br>Save a new version of the file you are working on
-            <br>Whenever you add, edit, or delete a file, you’re making a commit
+            <br>If you finish adding, editing, or deleting a file or single change, you should commit
             <br>Adds a change to your branch
           </li>
           <li><b>Pull request “PR”</b>
@@ -303,8 +308,8 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
             <br>Way to discuss and review your work with others
           </li>
           <li><b>Merge</b>
-            <br>When a PR is approved, changes are pulled in or merged into the main branch
-            <br>Changes publish/deploy to the live site one this happens
+            <br>When a PR is approved, changes are pulled in or merged into the parent or main branch
+            <br>Changes publish/deploy to the live site once this happens if merging into the main branch
           </li>
           <li><b>Issue</b>
             <br>Way to report new tasks or content fixes
@@ -324,7 +329,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
             <br>Done in GitHub</li>
           <li><b>Revising</b>
             <br>GitHub or MD/IDE</li>
-          <li><b>If I wanted to make a content change….</b></li>
+          <li><b>If I wanted to make a content change…</b></li>
             <ul>
               <li>Create a new branch off the most recent version of the main branch
               <li>Add commits
@@ -333,9 +338,9 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li>Then merge and deploy your changes
             </ul>
         </ul>
-        <h4>Set up SSH Keys to Initally Connect Git to GitHub</h4>
+        <h4>Set up SSH Keys to Initially Connect Git to GitHub</h4>
         <ul>
-          <li>To initally connect your local Git to GitHub, you will need to create an SSH key in terminal and connect it to your GitHub account</li>
+          <li>To initially connect your local Git to GitHub, you will need to create an SSH key in terminal and connect it to your GitHub account</li>
           <li>To create and connect your local SSH key to GitHub:
             <ul>
               <li>First, check for SSH keys; following the instructions <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys">here</a></li>
@@ -355,7 +360,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li>We should usually include a readme.md file</li>
               <li>We should usually include a .gitignore file</li>
                 <ul>
-                  <li>(This allows us to have files in the repo that we do NOT want uploaded to the cloud. (i.e., ssh keys or login info))</li>
+                  <li>This allows us to have files in the repo that we do NOT want uploaded to the cloud (i.e., ssh keys or login info)</li>
                 </ul>
               <li>We should almost always select a license</li>
                 <ul>
@@ -369,7 +374,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
               <li>Use dashes; we can't have spaces in our repository names, so we use dashes instead</li>
               <li>Be consistent! Our GitHub account will follow us throughout our development career, so show it some love</li>
             </ul>
-          <li>Add a description to your repository. Be concise and clear with your project descriptions.</li>
+          <li>Add a description to your repository. Be concise and clear with your project descriptions</li>
           <li>Use <code>git clone [GitHub provided URL]</code> to download your repo to your local machine</li>
             <ul>
               <li>Make sure you are in the directory that you want to clone it to</li>
@@ -377,7 +382,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
             </ul>
           <li>Create GitHub Issues using Markdown</li>
             <ul>
-              <li>GitHub offers a task management tool called GitHub issues, which gives developers and teams an easy way to keep track of key tasks and progress. Think of it as a built-in to-do list right inside our GitHub repository.</li>
+              <li>GitHub offers a task management tool called GitHub issues, which gives developers and teams an easy way to keep track of key tasks and progress. Think of it as a built-in to-do list right inside our GitHub repository</li>
               <li>GitHub issues can also help teams to do the following:</li>
                 <ul>
                   <li>Track, organize, and communicate ideas, tasks, bugs, and enhancements</li>
@@ -395,7 +400,7 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
             <li>If you are done with the branch, you should pull and merge in GitHub, and then delete the branch on both GitHub and your local machine</li>
             <li>To delete a branch from your local machine (should only be done AFTER you pull and merge in GitHub), use <code>git checkout main</code> to switch to your main branch, then use <code>git branch -d [branch name]</code> to delete</li>
               <ul>
-                <li>We should delete branches once we have merged to be sure we are never working off of old code. You can always recreate the branch from the updated main if you need to make further changes.</li>
+                <li>We should delete branches once we have merged to be sure we are never working off of old code. You can always recreate the branch from the updated main if you need to make further changes</li>
               </ul>
             <li>Once you have merged, you should pull your main again to ensure all changes are up to date using <code>git pull origin main</code></li>
           </ul>
@@ -414,14 +419,210 @@ Find Josh on GitHub and other platforms with jsparrowio username-->
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <h3>JavaScript Basics</h3>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li><b>JavaScript (JS)</b> is a high-level dynamic programming language that allows users to interact with websites. Using JavaScript, you can power your websites with effects, interactivity, data communication, and much more</li>
+          <li>In web development, JavaScript is the tool that takes a static HTML/CSS webpage and makes it interactive. On almost every website on the web, every time you do something with a webpage, such as click a button, retrieve data, or fill out a form, JavaScript is at work!</li>
+          <li>Some basics JavaScript features include: <b>variables</b>, <b>operators</b>, <b>conditionals</b>, <b>loops</b>, <b>functions</b>, and <b>events</b></li>
+          <li>JavaScript runs using the <b>control flow</b>, or the order in which a computer executes code in a JavaScript file</li>
+            <ul>
+              <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page</li>
+            </ul>
+          <li>A semicolon indicates the end of statement and is only required when you need separate statements on a single line. For example: <code>let x = 0; x < topics.length; x++</code></li>
+            <ul>
+              <li>Some people believe it is good practice to put a semicolon at the end of every line. However, this is only partially correct as there are some instances where you should NOT put a semicolon</li>
+               <ul>
+                  <li>The biggest example where you should not use a semicolon is when you are using curly brackets { } (ie for an if/else statement)</li>
+                  <li>The only time you can use a semicolon after a curly bracket is if you are using it for an assignment statement such as <code>var obj {};</code> </li>
+               </ul>
+           </ul>
+          <li>Comments are made like most other programming languages, using <code>//comment</code> for a single line comment, or 
+            <br><pre>/* 
+comment
+*/</pre> for long comments</li>
+          <li>All data types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as <b>primitive values</b></li>
+          <li>In computer science, an object is a value in memory which is possibly referenced by an identifier. In JavaScript, objects are the only mutable values. Functions are, in fact, also objects with the additional capability of being callable</li>
+          <li>Most features in JavaScript take <b>arguments</b>, which will be placed in between the <code>()</code> when calling a feature (usually a conditional, loop, function, or event)</li>
+          <li>To link a JavaScript file to your HTML file, always ensure you put it at the very end of your <code>&lt;body&gt;</code> element, typically after the footer. You will use <code>&lt;script src=”source url”&gt;&lt;/script&gt;</code> to insert it</li>
+              <ul>
+                <li>The reason you need to put the JavaScript link at the end of the HTML file is that the script will only affect elements that have already loaded. If you put the script at the beginning, no elements would have loaded, so there would be nothing for the script to affect!</li>
+              </ul>
+          <li><code>Math.floor()</code> and <code>Math.random()</code> are both properties of JavaScript's built-in Math object that can be used together to generate a random number</li>
         </ul>
+        <h4>Variables</h4>
+        <ul>
+          <li>In coding parlance, a <b>variable</b> is simply a named container that allows us to store data in our code</li>
+          <li>In older JavaScript versions, we would establish a variable using <code>var</code>. This would technically still work, but is considered obsolete and not best practice with newer versions of JavaScript</li>
+          <li>In newer JavaScript versions, the way we would define a variable would depend on if we want the variable to be able to be changed (mutable) or unchangeable (immutable)</li>
+          <li>Immutable variables are stored with a <code>const</code> keyword</li>
+            <ul>  
+              <li>For example <code>const myVariable = ”Steve”;</code></li>
+            </ul>
+          <li>Mutable variables are stored with a <code>let</code> keyword</li>
+            <ul>  
+              <li>For example <code>let myVariable;</code> which would establish the variable without defining it</li>
+            </ul>
+          <li>To declare a mutable (<code>let</code>) variable, you can initally do this in one of two ways:</li>
+            <ul>
+              <li>In the same line that you established the variable as shown with the <code>const</code> example above; for example: <code>let myVariable = "Steve";</code></li>
+              <li>You can also declare it in a separate line, such as <code>myVariable =”Steve”;</code>. Notice that there is no <code>let</code> in this code; that is because we would have already established the variable earlier in the code in this case</li>
+              <li>In addition to these examples, you can redeclare a <code>let</code> variable later in the script by using the second example with a different declaration</li>
+            </ul>
+          <li>To call (retrieve) your variable, you simply use its name. For example: <code>myVariable;</code></li>
+          <li>There are many different <b>data types</b> for variables</li>
+            <ul>
+              <li><b>String</b></li>
+                <ul>
+                  <li>This is a sequence of text known as a string. To signify that the value is a string, enclose it in single or double quote marks</li>
+                  <li>Examples of this would be: <code>let myVariable = 'Steve';</code> or <code>let myVariable = "Steve";</code>
+                    </li>
+                </ul>
+                <li><b>Number</b></li>
+                <ul>
+                  <li>This is a number. Numbers don't have quotes around them</li>
+                  <li>An example of this would be: <code>let myVariable = 10;</code></li>
+                </ul>
+                <li><b>Boolean</b></li>
+                <ul>
+                  <li>This is a True/False value. The words true and false are special keywords that don't need quote marks</li>
+                  <li>An example of this would be: <code>let myVariable = true;</code></li>
+                </ul>
+                <li><b>Array</b></li>
+                <ul>
+                  <li>This is a structure that allows you to store multiple values in a single reference</li>
+                  <li>Examples of this would be: <code>let myVariable = [1,'John','Steve',true];</code>. Refer to each member of the array like this: <code>myVariable[0]</code>, <code>myVariable[1]</code> etc</li>
+                </ul>
+                <li><b>Object</b></li>
+                <ul>
+                  <li>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn</li>
+                  <li>Examples of this would be: <code>let myVariable = document.querySelector('h1');</code>. All of the examples above are technically objects as well</li>
+                </ul>
+              </ul>
+          </ul>
+          <h4>Operators</h4>
+          <ul>
+            <li>An <b>operator</b> is a mathematical symbol that produces a result based on two values (or variables)</li>
+            <li>Types of operators</li>
+              <ul>
+                <li><b>Addition (Symbol: <code>+</code>)</b></li>
+                  <ul>
+                    <li>Add two numbers together or combine two strings</li>
+                    <li>Examples of this would be: <code>6 + 9;</code> <code>'Hello' + 'world!';</code></li>
+                  </ul>
+                  <li><b>Subtraction, multiplication, division  (Symbol: <code>-, *, /</code>)</b></li>
+                  <ul>
+                    <li>These do what you'd expect them to do in basic math</li>
+                    <li>Examples of this would be: <code>9 - 3;</code>, <code>8 * 2;</code> (multiply in JavaScript is an asterisk), <code>9 / 3;</code></li>
+                  </ul>
+                  <li><b>Assignment (Symbol: <code>=</code>)</b></li>
+                  <ul>
+                    <li>This assigns a value to a variable</li>
+                    <li>An example of this would be: <code>let myVariable = 'Steve';</code></li>
+                  </ul>
+                  <li><b>Strict equality (Symbol: <code>===</code>)</b></li>
+                  <ul>
+                    <li>This performs a test to see if two values are equal and of the same data type. It returns a true/false (Boolean) result</li>
+                    <li>An example of this would be: <code>let myVariable = 3; myVariable === 4;</code> (which would then return a <code>false</code>)</li>
+                  </ul>
+                  <li><b>Not; Does-Not-Equal (Symbol: <code>!, !==</code>)</b></li>
+                  <ul>
+                    <li>This returns the logically opposite value of what it precedes. It turns a true into a false, etc... When it is used alongside the Equality operator, the negation operator tests whether two values are not equal</li>
+                    <li>Examples of this would be: For "Not", the basic expression is true, but the comparison returns false because we negate it:
+                      <br><code>let myVariable = 3; !(myVariable === 3);</code>
+                      <br>"Does-not-equal" gives basically the same result with different syntax. Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3:
+                      <br><code>let myVariable = 3; myVariable !== 3;</code>
+                      </li>
+                  </ul>
+              </ul>
+            <li>Mixing data types can lead to some strange results when performing calculations. Be careful that you are referring to your variables correctly, and getting the results you expect. For example, enter '35' + '25' into your console. Why don't you get the result you expected? Because the quote marks turn the numbers into strings, so you've ended up concatenating strings rather than adding numbers. If you enter 35 + 25 you'll get the total of the two numbers</li>  
+          </ul>
+          <h4>Conditionals</h4>
+          <ul>
+            <li>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if...else statement</li>
+            <li>An example of this would be:</li>
+            <li>
+              <pre>let iceCream = "chocolate";
+if (iceCream === "chocolate") {
+  alert("Yay, I love chocolate ice cream!");
+} else {
+  alert("Awwww, but chocolate is my favorite…");
+}</pre></li>
+          <li>An <code>if</code> statement is a way of introducing decision-making into our code. Just like its name sounds, when using the <code>if</code> statement, code will only execute if the statement meets a condition, or is true</li>
+          <li>When the computer encounters an if statement in a JavaScript file, it will check to see if the condition that we provide is <b>truthy</b>. If it is, then it will do whatever action we ask it to do in between the curly brackets. If the condition isn’t true or has a value that isn’t truthy, then the computer will ignore whatever is in between the curly brackets and move on</li>
+          <li>What exactly does “<b>truthy</b>” and “<b>falsy</b>” mean in Javascript? A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of <code>false</code>. All other values, including a Boolean with the value of <code>true</code>, are considered truthy</li>
+          </ul>
+          <h4>Loops</h4>
+          <ul>
+            <li>Before we study loops, let's dive deeper into arrays for a moment</li>
+            <ul>
+              <li>To create an array, we declare a variable in the same way that we declared a variable with only one data item. However, instead of assigning the variable to a single value, we assign the variable to a group of values</li>
+              <li>As we touched on above, to work with individual data items inside an array, we need to have one more piece of information: the location of the data item in the array. This location is identified with a unique number called an <b>index</b>. Using each piece of data's index, or location number, we can access individual data inside the array</li>
+              <li>Again, as touched on above, To access data from the array, you would use an array index. These would always start with 0. So, for example, if we wanted to pull the 1 from <code>myVariable;</code>, we would use the variable call <code>myVariable[0];</code></li>
+              <li>Manually changing the values of the index is still not the most efficient way to <code>log</code> the values in the array. What if we wanted to <code>log</code> all of the values of the array individually? We would have to write out a <code>console.log</code> for every item! Imagine how tedious it would be to write this code manually if we had an array that contained 100 or even 1,000 items! In this case, the most efficient way to do this is to use <b>loops</b>, of which there are several types</li>
+            </ul>
+            <li>A <code>for</code> loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. Developers must use another statement, such as the conditional <code>if</code> statement that we just learned, to interrupt the control flow by executing a block of code a specific number of times</li>
+              <ul>
+                <li>An example would be:
+                  <pre>const shapes = ["triangle", "square", "pentagon", "circle"];
+for(let x = 0; x < shapes.length; x++) {
+  console.log(shapes[x]);
+}</pre></li>
+              </ul>
+            <li>There are other types of loops as well, and they can be used for other data types and features than arrays, but this is a great starting point to understand loops</li>
+          </ul>
+          <h4>Functions</h4>
+          <ul>
+            <li>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code</li>
+            <li>A function is different from a <code>for</code> loop or conditional statement because functions do not automatically execute when the JavaScript file is run</li>
+            <li>You must call a function by name in order to execute it</li>
+            <li>Being able to call a function to execute it also means you can control where in the control flow a task is executed</li>
+            <li>The 2 requirements of a JavaScript Function: </li>
+              <ul>
+                <li>1. Define the function</li>
+                <li>2. Call the function</li>
+              </ul>
+            <li>Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses <code>()</code>, separated by commas if there is more than one argument</li>
+            <li><b>Always</b> remember to include the <code>()</code> after the function name (definition). You can leave it empty or give it arguments, but is must always be included</li>
+            <li>You can also define your own functions by defining a name for your function, and then giving it arguments to run</li>
+              <ul>
+                <li>This is done by using <code>function functionName(//arguments) { //function action }</code></li>
+                <li>An example would be:
+                  <pre>function multiply(num1, num2) {
+let result = num1 * num2;
+  return result;
+}</pre></li>
+                <li>This would then be executed in the script by calling the function; an example of that would be: <code>multiply(4,7);</code></li>
+              </ul>
+              <li>When we declare a function in our JavaScript code, we are creating a reusable block of code that performs a specific task. However, declaring a function does not mean that the code will automatically execute. We need to call the function in the code at the spot we want it to execute</li>
+              <li>It is also important to remember that since control flow dictates that JavaScript files are executed from top to bottom, <b>order matters</b></li>
+          </ul>
+          <h4>Events</h4>
+          <ul>
+            <li>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse</li>
+            <li>An example of an event handler is:
+              <pre>document.querySelector("html").addEventListener("click", function () {
+  alert("Ouch! Stop poking me!");
+});</pre></li>
+            <li>There are a number of ways to attach an event handler to an element. In the example above, we select the <code>&lt;html&gt;</code> element. We then call its <code>addEventListener()</code> function, passing in the name of the event to listen to <code>('click')</code> and a function to run when the event happens</li>
+            <li>The function we just passed to <code>addEventListener()</code> here is called an <b>anonymous function</b>, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an <b>arrow function</b>. An arrow function uses <code>() =></code> instead of <code>function ()</code></li>
+            <ul>
+              <li>An example of an arrow function would be
+              <pre>document.querySelector("html").addEventListener("click", () => {
+  alert("Ouch! Stop poking me!");
+}); </pre></li>
+            </ul>
+          </ul>
+          <h4>Console</h4>
+          <ul>
+            <li>The word <b>console</b> refers to a test environment that developers use to check out their code</li>
+            <li>The console will be in your browser. For example, in Chrome, it is under Development Tools</li>
+            <li>We can use the <code>console.log();</code> method to output a message to the web console by adding an argument</li>
+            <li>In the <code>console.log();</code> command, <code>.log();</code> is a method, which means a set of instructions that can be executed by a computer. The <code>.log();</code> method will output whatever we add inside the parentheses to the console</li>
+          </ul>
       </section>
     </main>
-
     <footer>
-      <p></p>
+      <p>I can code!</p>
     </footer>
     <script src="./assets/script.js"></script>
   </body>
