@@ -10,7 +10,7 @@ This solves the issue of having to comb through pages of notes, in addition to m
 
 This project helped teach many formatting and basic coding techniques for the languages it is written in. Additionally, it helped teach techniques that were not included in the base code or lessons.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
