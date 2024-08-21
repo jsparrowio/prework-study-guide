@@ -43,6 +43,7 @@ code {
     background-color: rgb(237, 237, 241);
     border: 1px solid black;
     padding: 1px;
+    white-space: nowrap;
 }
 p {
     text-align: center;
