@@ -46,5 +46,5 @@ Please refer to the LICENSE in the repo for additional information.
 
 The main feature of this webpage is to be used as a study guide, not only for the Bootcamp prework, but also for basic notes for HTML, CSS, Git/GitHub, and JavaScript.
 
-It also features the ability to select a topic for you to study in the console.\ 
+It also features the ability to select a topic for you to study in the console. \ 
 See the instructions under "usage" for the latter. 
